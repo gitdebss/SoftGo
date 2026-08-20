@@ -9,7 +9,13 @@ export const FormCarona = ({ onSubmit }: IFormProps) => {
         <form onSubmit={(event) => {
             event.preventDefault()
             const formData = new FormData(event.currentTarget)
-            const carona = Object.fromEntries(formData) as unknown as IFormCarona
+            const carona: IFormCarona = {
+                date: String(formData.get('date') || ''),
+                hour: String(formData.get('hour') || ''),
+                name: String(formData.get('name') || ''),
+                phone: String(formData.get('phone') || ''),
+                city: String(formData.get('city') || ''),
+            }
             onSubmit(carona)
         }} className="container">
             <div className="flex f-row">
