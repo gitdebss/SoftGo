@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import { Header } from "./components/Header";
 import { FormCarona } from "./components/FormCarona";
 import { Card } from "./components/Card";
