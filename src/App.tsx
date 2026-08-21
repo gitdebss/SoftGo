@@ -25,7 +25,7 @@ function App() {
         <h2 className="mb-3 text-lg font-bold text-black">Caronas Disponíveis</h2>
         <ul className="flex flex-col gap-4 p-0 list-none">
           {caronas.map((carona) => (
-            <Card {...carona} />
+            <Card {...carona} key={carona.id} />
           ))}
         </ul>
       </main>
