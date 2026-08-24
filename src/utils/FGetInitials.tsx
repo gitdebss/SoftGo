@@ -1,5 +1,5 @@
 export function getInitials(name: string): string {
-  const initial= name.slice(0, 1).toUpperCase()
-  const initialSecond = name.split(" ")[1].slice(0, 1).toUpperCase()
-  return initial + initialSecond;
+    const nameParts = name.split(" ");
+    const initials = nameParts.slice(0,2).map((part) => part.charAt(0).toUpperCase());
+    return initials.join("");
 }
