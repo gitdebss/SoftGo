@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
-:root {
-  --manrope: 'Manrope', system-ui, 'Segoe UI', Roboto, sans-serif;
+@theme {
+  --font-main: 'Manrope', system-ui, 'Segoe UI', Roboto, sans-serif;
 
-  font-family: var(--manrope);
-  color: var(--text);
-  background: var(--bg);
-}
-
-@theme{
   --color-text: #6b6375;
   --color-text-h: #08060d;
   --color-bg: #F6F3F2;
-  --color-container-bg:#fff;
+  --color-container-bg: #fff;
   --color-border: #D0D0D0;
   --color-accent-bg: #65A4EC;
   --color-danger: #BA1A1A;
   --color-contact-icon: #25D366;
+
   --shadow-default: 0px 1px 2px 0px #0000000D;
+}
+
+:root {
+  font-family: var(--font-main);
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 body {
