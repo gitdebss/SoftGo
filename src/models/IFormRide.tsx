@@ -1,4 +1,4 @@
-export interface IFormCarona {
+export interface IFormRide {
     name: string
     phone: string
     city: string

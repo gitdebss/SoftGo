@@ -1,4 +1,4 @@
-export interface ICarona {
+export interface IRide {
     id: number;
     date: string;
     hour: string;

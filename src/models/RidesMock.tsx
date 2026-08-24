@@ -1,4 +1,4 @@
-export const mockCaronas = [ 
+export const mockRides = [ 
     {
         id: 1,
         date: "2026-08-10",
