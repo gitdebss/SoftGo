@@ -1,6 +1,6 @@
 import { Clock, MapPin, MessageCircleMore, Trash } from "lucide-react";
 import type { IRide } from "../models/IRide";
-import { getInitials } from "../utils/FGetInitials";
+import { getInitials } from "../utils/getInitials";
 
 interface ICardProps{
   ride: IRide,
