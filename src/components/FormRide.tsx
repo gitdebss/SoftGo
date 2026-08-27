@@ -1,7 +1,7 @@
 import type { IFormRide } from "../models/IFormRide";
 
 interface IFormProps {
-  onSubmit(ride: IFormRide): void;
+  onSubmit(ride: IFormRide): Promise<void>;
 }
 
 export const FormRide = ({ onSubmit }: IFormProps) => {
